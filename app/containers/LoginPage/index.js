@@ -15,13 +15,19 @@ import { compose } from 'redux';
 import injectSaga from 'utils/injectSaga';
 import injectReducer from 'utils/injectReducer';
 import makeSelectLoginPage from './selectors';
+import H1 from 'components/H1';
+import Form from './Form';
+import Input from './Input';
+import Section from './Section';
 import reducer from './reducer';
 import saga from './saga';
 import messages from './messages';
 
-export class LoginPage extends React.Component { // eslint-disable-line react/prefer-stateless-function
+export class LoginPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+
+
   render() {
-    return (
+return (
       <div>
         <Helmet>
           <title>LoginPage</title>
